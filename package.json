@@ -1,7 +1,7 @@
 {
   "name": "lcc_templates_sharepoint",
-  "version": "1.0.0",
-  "description": "SharePoint packaged version of the LCC templates",
+  "version": "1.0.1",
+  "description": "SharePoint packaged version of the lcc templates",
   "license": "MIT",
   "author": "Leeds City Council eServices",
   "main": "views/lcc-template.html",
