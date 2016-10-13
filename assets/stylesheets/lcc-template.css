@@ -793,3 +793,80 @@ ol, ul {
           content: "\f099"; }
         .socialBookmarks ul li a.youtube:after {
           content: "\f167"; }
+
+ul.menu {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none; }
+  ul.menu li {
+    float: left;
+    margin: 0;
+    padding: 0; }
+    ul.menu li a {
+      font-size: 17px;
+      font-weight: bold;
+      padding: 11px 15px;
+      color: #133E8D;
+      line-height: 40px;
+      min-height: 62px;
+      display: block; }
+      ul.menu li a:hover, ul.menu li a:focus {
+        background: #dedede;
+        text-decoration: none; }
+      ul.menu li a.myAccount {
+        margin: 10px;
+        padding: 0px 15px;
+        min-height: 38px;
+        line-height: 38px;
+        border: 1px solid; }
+        ul.menu li a.myAccount span {
+          padding: -2px 0 5px 0;
+          display: inline-block; }
+        ul.menu li a.myAccount:after {
+          font-family: "FontAwesome";
+          content: "\f007";
+          font-size: 18px;
+          padding: 0 5px; }
+      ul.menu li a.main-menu, ul.menu li a.search {
+        display: none;
+        background: #fff; }
+        ul.menu li a.main-menu:before, ul.menu li a.search:before {
+          font-family: "FontAwesome";
+          font-size: 25px;
+          float: right; }
+      ul.menu li a.search {
+        background: #cdcdcd; }
+        ul.menu li a.search:before {
+          content: "\f002"; }
+        ul.menu li a.search.active:before {
+          content: "\f00d";
+          padding: 0 2px; }
+      ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus {
+        background: #bdc3c7; }
+      ul.menu li a.main-menu {
+        background: #133E8D;
+        color: #fff; }
+        ul.menu li a.main-menu:before {
+          content: "\f0c9";
+          padding-left: 5px; }
+        ul.menu li a.main-menu.active:before {
+          content: "\f00d";
+          padding-left: 7px; }
+      ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
+        background: #0e2e69; }
+
+@media (max-width: 767px) {
+  ul.menu li a.main-menu,
+  ul.menu li a.search {
+    display: block; } }
+
+@media (max-width: 600px) {
+  ul.menu li a {
+    padding: 9px 9px; } }
+
+@media (max-width: 550px) {
+  ul.menu li a.signin {
+    display: none; }
+  ul.menu li a.myAccount span {
+    display: none; } }
