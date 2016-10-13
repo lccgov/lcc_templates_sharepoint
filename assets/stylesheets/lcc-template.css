@@ -135,7 +135,7 @@ a[rel="external"]:after {
   padding-left: 20px; }
 
 .container-fluid {
-  max-width: 900px !important; }
+  max-width: 1500px; }
 
 .container-fluid.full {
   max-width: 100%; }
