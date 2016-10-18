@@ -211,7 +211,6 @@ ul.menu {
       font-size: 17px;
       font-weight: bold;
       padding: 11px 15px;
-      color: #133E8D;
       line-height: 40px;
       min-height: 62px;
       display: block; }
@@ -434,7 +433,8 @@ footer.main {
     background: #133E8D; }
     footer.main .footer ul {
       display: block;
-      margin: 0px; }
+      margin: 0px;
+      padding: 0px; }
       footer.main .footer ul li:first-child:nth-last-child(1),
       footer.main .footer ul li:first-child:nth-last-child(1) ~ li {
         width: 100%; }
@@ -534,7 +534,7 @@ footer.main {
     @media (max-width: 1200px) {
       footer.main .footer li {
         margin: 0px !important;
-        padding: 0px; }
+        padding: 0px !important; }
       footer.main .footer li:first-child:nth-last-child(8),
       footer.main .footer li:first-child:nth-last-child(8) ~ li {
         width: 100% !important; }
@@ -547,7 +547,7 @@ footer.main {
     @media (max-width: 1000px) {
       footer.main .footer li {
         margin: 0px !important;
-        padding: 0px; }
+        padding: 0px !important; }
       footer.main .footer li:first-child:nth-last-child(6),
       footer.main .footer li:first-child:nth-last-child(6) ~ li {
         width: 100% !important; }
@@ -568,7 +568,7 @@ footer.main {
         width: 100%;
         border-bottom: none;
         margin: 0px !important;
-        padding: 0px; }
+        padding: 0px !important; }
       footer.main .footer li:first-child:nth-last-child(1),
       footer.main .footer li:first-child:nth-last-child(1) ~ li {
         width: 100% !important; }
@@ -816,7 +816,6 @@ ul.menu {
       font-size: 17px;
       font-weight: bold;
       padding: 11px 15px;
-      color: #133E8D;
       line-height: 40px;
       min-height: 62px;
       display: block; }
