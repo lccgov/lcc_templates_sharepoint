@@ -708,7 +708,7 @@ footer.main {
     top: 62px;
     left: 0px;
     background: #bdc3c7;
-    padding: 20px 25px 15px 25px;
+    padding: 20px;
     margin: 0px;
     height: auto;
     width: 100%;
@@ -725,18 +725,6 @@ footer.main {
       height: 100%;
       min-height: 100%; } }
 
-select.form-control {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none; }
-
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none; }
-
 h1 {
   font-size: 50px;
   margin: 0.75em 0 0.75em 0; }
@@ -749,6 +737,13 @@ p, ol, ul {
 
 ol, ul {
   padding-left: 1em; }
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+    margin: 0.5em 0 0.5em 0; }
+  h2, h3, h4, h5 {
+    margin: 1em 0 0.3em 0; } }
 
 .logo {
   height: 148px;

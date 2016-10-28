@@ -77,7 +77,8 @@ $(document).ready(function () {
 
     var message = document.getElementById('global-cookie-message');
     if (message) {
-      $(message).on('click', '.js-seen-cookie-message', function () {
+      $(message).on('click', '.js-seen-cookie-message', function (event) {
+        event.preventDefault();
         LCC.Cookie.cookieCommand('seen_cookie_message', 'yes', { days: 28 });
       });
 
@@ -171,16 +172,15 @@ $(document).ready(function () {
             if($(this).scrollTop() > offset_opacity ) { 
                 $back_to_top.addClass('cd-fade-out');
             }
-
-            //smooth scroll to top
-	        $back_to_top.on('click', function(event){
-		        event.preventDefault();
-		        $('body,html').animate({
-			        scrollTop: 0 ,
-		 	    }, scroll_top_duration);
-            });
-
 	    });
+
+		//smooth scroll to top
+		$back_to_top.on('click', function(event){
+			event.preventDefault();
+			$('body,html').animate({
+				scrollTop: 0 ,
+			}, scroll_top_duration);
+		});
     }
    global.LCC = LCC;
 })(window)
@@ -220,7 +220,7 @@ $(document).ready(function () {
         });
 
         //equal heights
-        equalheight = function(container){
+        var equalheight = function(container){
             var currentTallest = 0,
                 currentRowStart = 0,
                 rowDivs = new Array(),
@@ -497,12 +497,7 @@ $(document).ready(function () {
 
         $(window).resize(function () {
             $.resizeSearchResults();
-        });    
- 
-    return {
-        activate: activateResponsiveDesign
-    }
-    
+        });        
     }
    global.LCC = LCC;
 })(window)
