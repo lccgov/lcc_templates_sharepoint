@@ -275,7 +275,7 @@ ul.menu {
     display: none; } }
 
 .masterhead {
-  background: #f4f4f4;
+  background: #fff;
   width: 100%;
   position: relative; }
   .masterhead a.navbar-brand {
@@ -659,8 +659,8 @@ footer.main {
   padding-left: 5px !important;
   min-height: 40px !important;
   line-height: 2em;
-  background: #fff !important;
-  border: 1px solid #fff !important;
+  background: #F3F3F4 !important;
+  border: 1px solid #F3F3F4 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
   -webkit-appearance: none;
@@ -678,10 +678,13 @@ footer.main {
   height: 40px;
   min-height: 40px;
   padding: 0 15px;
-  display: block; }
+  display: block;
+  color: #333;
+  background: #F3F3F4; }
 
 .ms-srch-sb > .ms-srch-sb-searchLink:hover, .ms-srch-sb > .ms-srch-sb-searchLink:focus {
   background: #333;
+  color: #fff;
   text-decoration: none; }
 
 .ms-srch-sb-borderFocused {
