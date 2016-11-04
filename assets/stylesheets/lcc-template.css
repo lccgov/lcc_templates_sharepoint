@@ -613,13 +613,11 @@ footer.main {
       font-family: FontAwesome;
       font-size: 25px;
       border-radius: 50%;
-      border: 1px solid #fff;
       width: 42px;
       height: 42px;
       display: block;
       text-align: center;
-      padding-top: 3px;
-      color: #fff; }
+      padding-top: 3px; }
     footer.main .socialBookmarks a:hover:after {
       background: #fff;
       color: #133E8D;
