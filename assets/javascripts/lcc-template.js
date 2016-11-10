@@ -145,6 +145,91 @@ $(document).ready(function () {
   };
 
   global.LCC = LCC;
+})(window, jQuery);(function (global, $) {
+    "use strict";
+    var LCC = global.LCC || {};
+	    LCC.MainMenu = LCC.MainMenu || {};
+
+    $(document).ready(function () {
+        LCC.MainMenu.addActiveItemEvent();
+    });
+
+    LCC.MainMenu.addActiveItemEvent = function () {
+        $('a.main-menu').click(function() {
+            $('#main-menu').toggleClass("active");
+            $(this).toggleClass("active");
+            $('#main-menu ul.root li:nth-child(1) a').addClass("firstItem");
+            $('#main-menu ul.root li ul li a').removeClass("firstItem");
+            $('#main-menu ul.root li a.firstItem').focus();
+        });
+    };
+
+    global.LCC = LCC;
+
+})(window, jQuery);(function (global, $) {
+    "use strict";
+    var LCC = global.LCC || {};
+	    LCC.GlobalSearch = LCC.GlobalSearch || {};
+
+    $(document).ready(function () {
+        LCC.GlobalSearch.addClickEvent();
+    });
+
+    LCC.GlobalSearch.addClickEvent = function () {
+        $('a.search').click(function() {
+            $('#nav-search').toggleClass("active");
+            $(this).toggleClass("active");
+            $('#nav-search input').focus();
+        });
+    };
+
+    global.LCC = LCC;
+
+})(window, jQuery);(function (global, $) {
+    "use strict";
+    var LCC = global.LCC || {};
+	    LCC.EqualHeights = LCC.EqualHeights || {};
+
+    $(global).on('load', function() {
+        LCC.EqualHeights.applyEqualHeights();
+    });
+
+    $(global).on('resize', function(){
+        LCC.EqualHeights.applyEqualHeights();
+    });
+
+    LCC.EqualHeights.applyEqualHeights = function () {
+        var currentTallest = 0,
+            currentRowStart = 0,
+            rowDivs = new Array(),
+            $el,
+            topPosition = 0;
+
+        $('.equal-item').each(function() {
+            $el = $(this);
+            $($el).height('auto')
+            topPosition = $el.position().top;
+
+            if (currentRowStart != topPosition) {
+                for (var currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+                    rowDivs[currentDiv].height(currentTallest);
+                }
+                rowDivs.length = 0; // empty the array
+                currentRowStart = topPosition;
+                currentTallest = $el.height();
+                rowDivs.push($el);
+            } else {
+                rowDivs.push($el);
+                currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+            }
+            for (var currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+                rowDivs[currentDiv].height(currentTallest);
+            }
+        });
+    };
+
+    global.LCC = LCC;
+
 })(window, jQuery);(function (global) {
     "use strict";
 
@@ -181,75 +266,7 @@ $(document).ready(function () {
    
 	global.LCC = LCC
   
-})(window);  (function (global, $) {
-    "use strict";
-    var LCC = global.LCC || {};
-	    LCC.ResponsiveDesign = LCC.ResponsiveDesign || {};
-
-    $(document).ready(function () {
-        LCC.ResponsiveDesign.activate();
-    });
-
-    //equal heights
-    LCC.ResponsiveDesign.equalheight = function(container){
-        var currentTallest = 0,
-            currentRowStart = 0,
-            rowDivs = new Array(),
-            $el,
-            topPosition = 0;
-
-        $(container).each(function() {
-            $el = $(this);
-            $($el).height('auto')
-            topPosition = $el.position().top;
-
-            if (currentRowStart != topPostion) {
-                for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-                rowDivs[currentDiv].height(currentTallest);
-                }
-                rowDivs.length = 0; // empty the array
-                currentRowStart = topPostion;
-                currentTallest = $el.height();
-                rowDivs.push($el);
-            } else {
-                rowDivs.push($el);
-                currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-            }
-            for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-                rowDivs[currentDiv].height(currentTallest);
-            }
-        });
-    }
-
-    LCC.ResponsiveDesign.activate = function () {
-        //main menu
-        $('a.main-menu').click(function() {
-            $('#main-menu').toggleClass("active");
-            $(this).toggleClass("active");
-            $('#main-menu ul.root li:nth-child(1) a').addClass("firstItem");
-            $('#main-menu ul.root li ul li a').removeClass("firstItem");
-            $('#main-menu ul.root li a.firstItem').focus();
-        });
-    
-        //search toggle
-        $('a.search').click(function() {
-            $('#nav-search').toggleClass("active");
-            $(this).toggleClass("active");
-            $('#nav-search input').focus();
-        });
-
-        $(window).on('load', function() {
-            LCC.ResponsiveDesign.equalheight('.equal-item');
-        });
-
-        $(window).on('resize', function(){
-            LCC.ResponsiveDesign.equalheight('.equal-item');
-        });
-    }
-   global.LCC = LCC;
-})(window, jQuery)
-;
-(function (global, $) {
+})(window);(function (global, $) {
     "use strict";
     
     var LCC = global.LCC || {}
@@ -351,9 +368,11 @@ $(document).ready(function () {
   
 })(window, jQuery);//(=) require modules
 //(=) require cookie-bar
-//(=) require back-to-top
-//(=) require responsive-design
-//(=) require accordion
-//(=) require carousel
-//(=) require scroll-to
+//(=) require main-menu
+//(=) require global-search
+//(=) require equal-heights
+//(=) require modules/back-to-top
+//(=) require modules/accordion
+//(=) require modules/carousel
+//(=) require modules/scroll-to
 ;
