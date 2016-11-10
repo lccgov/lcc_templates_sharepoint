@@ -249,259 +249,111 @@ $(document).ready(function () {
    global.LCC = LCC;
 })(window, jQuery)
 ;
-    (function (global, $) {
+(function (global, $) {
     "use strict";
-    var LCC = global.LCC || {};
-	    LCC.Accordion = LCC.Accordion || {};
+    
+    var LCC = global.LCC || {}
+        LCC.Modules = LCC.Modules || {}
+                                
+    LCC.Modules.Accordion = function () {
+        this.start = function (element) {
+            var drawer_panel = element.data('accordion-drawer-panel') ? element.data('accordion-drawer-panel') : '.accordion-drawer h3 ~ div',
+                drawer_header = element.data('accordion-drawer-header') ? element.data('accordion-drawer-header') : '.accordion-drawer h3';
 
-    $(document).ready(function () {
-        LCC.Accordion.activate();
-    });
-
-    LCC.Accordion.activate = function () {
-         //Accordion 
-         $('.expandContent h3 ~ div').hide();
-
-         $(".expandContent h3").on("click", function()
+            $(element).find(drawer_panel).hide();
+            $(element).find(drawer_header).on("click", function()
             {
                 $(this).toggleClass("active");
-                var p = $(this).next('div').slideToggle();				
-                if ($(this).children().find('#tooltip').text() === "Click to expand")
-                {
+                $(this).next('div').slideToggle();                                                                
+                if ($(this).children().find('#tooltip').text() === "Click to expand") {
                     $(this).children().find('#tooltip').text('Click to hide')
                 }
-                else
-                {
+                else {
                     $(this).children().find('#tooltip').text('Click to expand')
                 }
                 return false;
-           });  
-
-    }
-   global.LCC = LCC;
+            });  
+        }   
+    };
+   
+    global.LCC = LCC
 })(window, jQuery)
 ;
-    (function (global, $) {
+(function (global, $) {
     "use strict";
-    var LCC = global.LCC || {};
-	    LCC.OtherStuff = LCC.OtherStuff || {};
+    
+    var LCC = global.LCC || {}
+        LCC.Modules = LCC.Modules || {}
 
-    $(document).ready(function () {
-        LCC.OtherStuff.activate();
-    });
+    //relies on bootstrap so make sure bootstrap is loaded before this module is used                          
+    LCC.Modules.Carousel = function () {
+        this.start = function (element) {        
+            if($(element).find('ol.carousel-indicators').length) {
+                var $indicators = $(element).find('ol.carousel-indicators');
+                $(element).find('.item').each(function(index) {
+                    $indicators.append('<li data-target="#' + element[0].id + '" data-slide-to="' + index + '" class="' + (index === 0 ? "active" : "")  + '"></li>');
+                });
+            }
 
-    LCC.OtherStuff.activate = function () {
-
-
-    //image gallery
-    $("#gallery li img").hover(function () {
-        $('#main-img').attr('src', $(this).attr('src'));
-    });
-
-        $("#gallery-ImCarousel li img").hover(function () {
-        $("#gallery-ImCarousel img[id$=imgTop]").attr('src', $(this).attr('src'));
-    });
-
-
-        // bind a click event to the 'skip' link
-        $(".scroll").click(function (event) {
-            var that = this;
-            var scrollTo = '#' + that.href.split('#')[1]
-            $("body, html").animate({ scrollTop: $(scrollTo).offset().top }, 600, function () {
-                $(scrollTo).attr('tabindex', '-1').on('blur focusout', function () {
-                    // when focus leaves this element, 
-                    // remove the tabindex attribute
-                    $(this).removeAttr('tabindex');
-                }).focus(); // focus on the content container           
+            //add prev button
+            element.find('.carousel-inner').append('<a class="left carousel-control" href="#' + element[0].id + '" data-slide="prev"><span class="icon-prev"><span class="sr-only">Previous slide</span></span></a>');
+            //add next button
+            element.find('.carousel-inner').append('<a class="right carousel-control" href="#' + element[0].id + '" data-slide="next"><span class="icon-next"></span><span class="sr-only">Next slide</span></a>');  
+            
+            //add play and pause button
+            element.find('.carousel-inner').append('<div id="carouselButtons"> \
+                                                <button id="playButton" type="button" class="btn btn-default btn-sm"> \
+                                                    <span class="glyphicon glyphicon-play"></span> \
+                                                    <span class="sr-only">Play carousel</span> \
+                                                </button> \
+                                                <button id="pauseButton" type="button" class="btn btn-default btn-sm"> \
+                                                    <span class="glyphicon glyphicon-pause"></span> \
+                                                    <span class="sr-only">Pause carousel</span> \
+                                                </button> \
+                                            </div>');
+    
+            //add events
+            $(element).find('#playButton').click(function () {
+                $(element).carousel('cycle');
             });
-
-        });
-  
-
-
-    //external links
-    $('a[rel="external"]').attr('target', '_blank');
-
-    //external links
-    $('a[rel="pdf"]').attr('target', '_blank');
-
-    //external links
-    $('a[rel="doc"]').attr('target', '_blank');
-
-    //timetbale hover
-    $(function () {
-        $(".session").hover(function () {
-            $(this).find(".sessionInfo").show();
-        }
-                        , function () {
-                            $(this).find(".sessionInfo").hide();
-                        }
-                       );
-    });
-
-
-    //stop popover from jumping to top
-    $('a.popoverInfo').on('click', function (e) { e.preventDefault(); return true; });
-
-    //stop popover from jumping to top
-    $('a.noLink').on('click', function (e) { e.preventDefault(); return true; });
-
-    //stop popover from jumping to top
-    $('.sessionInfo h4 a').on('click', function (e) { e.preventDefault(); return true; });
-
-    //timetable filter toggle
-    $('a.showClassFilters').click(function () {
-        $('.classFilters').toggleClass("active");
-        $(this).toggleClass("active");
-    });
-
-    //timetable results
-    $('a.showTimetableResults').click(function () {
-        $('.timetableView').toggleClass("active");
-        $(this).toggleClass("active");
-    });
-
-    //carousel play + pause
-    $('#playButton').click(function () {
-        $('#myCarousel').carousel('cycle');
-    });
-    $('#pauseButton').click(function () {
-        $('#myCarousel').carousel('pause');
-    });
-
-
-
-    //membership table reveal
-    $(function () {
-        $("#showmemberships a").click(function () {
-            $(".memberships").toggleClass("hidememberships");
-            $("#showmemberships a").toggleClass("active");
-        });
-    });
-
-
-
-
-
-
-    // event date show first three event list items
-      $('ul.date-list').each(function () {
-      var LiN = $(this).find('li').length;
-      if (LiN > 3) {
-      $('li', this).eq(2).nextAll().hide().addClass('toggleable');
-      $(this).append('<a class="plusMinus">Show more...</a>');
-      }
-      });
-      $('ul.date-list').on('click', '.plusMinus', function () {
-      if ($(this).hasClass('active')) {
-      $(this).text('Show more...').removeClass('active');
-      } else {
-      $(this).text('Show less...').addClass('active');
-      }
-      $(this).siblings('li.toggleable').slideToggle();
-      });
-
-
-
-    
-    //animated scroll
-    
-      $(document).ready(function($) {
-        $(".scroll").click(function(event) {
-        event.preventDefault();
-        $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
-        } );
-      } );
-    
-    //feedback form
-    
-    //search toggle
-    $('#site-search-reveal').click(function () {
-        $('#site-search-wrapper').slideToggle("slow");
-        $this.toggleClass('active');
-    });
-    
-    //search toggle
-    $('#feedback').click(function () {
-        $('#feedback-form-content').slideToggle("slow");
-        $('#feedback-form-content').focus();
-    });
-    
-    //expand content
-    
-    $('.expand').click(function(){
-		var $this = $(this);
-		$this.toggleClass('active');
-		if($this.hasClass('active')){
-			$(".expand .sr-only").text('Click to hide');			
-		} else {
-			$(".expand .sr-only").text('Click to expand');
-		}
-	});
-    
-    //feedback form select
-    
-
-       $('input[type="radio"]').click(function() {
-           if($(this).attr('id') == 'helpful_no') {
-                $('#helpful_no_select').show();           
-           }
-
-           else {
-                $('#helpful_no_select').hide();   
-           }
-       });
-
-    
-
-       $('input[type="radio"]').click(function() {
-           if($(this).attr('id') == 'helpful_maybe') {
-                $('#helpful_maybe_select').show();           
-           }
-
-           else {
-                $('#helpful_maybe_select').hide();   
-           }
-       });
-
-    
-
-     //Events results responsive design
-        $('#filterhide a').click(function (event) {
-            event.preventDefault();
-            $('.eventsFilter.col-md-3').toggleClass("active");
-        });
-        $('#filterCloseButton a').click(function (event) {
-            event.preventDefault();
-            $('.eventsFilter.col-md-3.active').removeClass("active");
-        });
-        $('#closeIcon').click(function (event) {
-            event.preventDefault();
-            $('.eventsFilter.col-md-3.active').removeClass("active");
-        });
-        $.resizeSearchResults = function () {
-            var browserViewport = $(window).width();
-            if (browserViewport <= 992) {
-                $(".relDate").prependTo(".eventsFilterType.first");
-            }
-            if (browserViewport > 992) {
-                $('.relDate').appendTo('.eventsSearchSort .pull-right');
-            }
-        }
-
-        $.resizeSearchResults();
-
-        $(window).resize(function () {
-            $.resizeSearchResults();
-        });        
-    }
-   global.LCC = LCC;
+           $(element).find('#pauseButton').click(function () {
+                $(element).carousel('pause');
+            });
+        }   
+    };
+   
+    global.LCC = LCC
 })(window, jQuery)
 ;
-//(=) require modules
+(function (global, $) {
+    "use strict";
+
+	var LCC = global.LCC || {}
+		LCC.Modules = LCC.Modules || {}
+		
+ 	LCC.Modules.ScrollTo = function () {
+		this.start = function (element) {
+		    // bind a click event to the 'skip' link
+            $(element).click(function (event) {
+                var scrollTo = '#' + this.href.split('#')[1]
+                $("body, html").animate({ scrollTop: $(scrollTo).offset().top }, 600, function () {
+                    $(scrollTo).attr('tabindex', '-1').on('blur focusout', function () {
+                        // when focus leaves this element, 
+                        // remove the tabindex attribute
+                        $(this).removeAttr('tabindex');
+                    }).focus(); // focus on the content container           
+                });
+            });
+		}   
+	};
+   
+	global.LCC = LCC
+  
+})(window, jQuery);//(=) require modules
 //(=) require cookie-bar
 //(=) require back-to-top
 //(=) require responsive-design
 //(=) require accordion
-//(=) require otherStuff
+//(=) require carousel
+//(=) require scroll-to
 ;
