@@ -4164,7 +4164,23 @@ var html5_methods = {
   $(function(){
     LCC.enhanceYoutubeVideoLinks($('.media-container'));
   });
-})(jQuery);(function (global) {
+})(jQuery);(function(global, $) {
+    "use strict";
+    $(document).ready(function() {
+        var elementPosTop = $('#ms-designer-ribbon').position().top;
+        
+        $(global).scroll(function() {
+            var wintop = $(global).scrollTop(), docheight = $(document).height(), winheight = $(global).height();
+            //if top of element is in view
+            if (wintop > elementPosTop) {
+                $('#ms-designer-ribbon').css({ "position":"fixed", "top":"0", "z-index":"700" });
+            }
+            else {
+                $('#ms-designer-ribbon').css({ "position":"inherit" });
+            }
+        });
+    });
+})(window, jQuery);(function (global) {
     "use strict";
 
 	var $ = global.jQuery
@@ -4325,6 +4341,7 @@ var html5_methods = {
 //(=) require global-search
 //(=) require equal-heights
 //(=) require accessible-media-player
+//(=) require sticky-ribbon
 //(=) require modules/back-to-top
 //(=) require modules/accordion
 //(=) require modules/carousel
