@@ -6423,7 +6423,7 @@ var widgetsDatepicker = $.datepicker;
 
     //relies on bootstrap so make sure bootstrap is loaded before this module is used                          
     LCC.Modules.Carousel = function () {
-        this.start = function (element) {        
+        this.start = function (element) {    
             if($(element).find('ol.carousel-indicators').length) {
                 var $indicators = $(element).find('ol.carousel-indicators');
                 $(element).find('.item').each(function(index) {
@@ -6447,21 +6447,19 @@ var widgetsDatepicker = $.datepicker;
                                                     <span class="sr-only">Pause carousel</span> \
                                                 </button> \
                                             </div>');
-    
+            $(element).find('.item:first-child').addClass('active');
             //add events
             $(element).find('#playButton').click(function () {
                 $(element).carousel('cycle');
             });
-           $(element).find('#pauseButton').click(function () {
+            $(element).find('#pauseButton').click(function () {
                 $(element).carousel('pause');
             });
         }   
     };
    
     global.LCC = LCC
-})(window, jQuery)
-;
-(function (global, $) {
+})(window, jQuery);(function (global, $) {
     "use strict";
 
 	var LCC = global.LCC || {}
