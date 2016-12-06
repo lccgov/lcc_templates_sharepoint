@@ -477,6 +477,176 @@ td .ui-state-hover {
   -moz-border-radius: 0px; }
 
 /** jquery ui datepicker overides ***/
+/* helper classes */
+hr.ms-rteElement-spacer {
+  -ms-name: "spacer";
+  display: block;
+  clear: left; }
+
+hr.ms-rteElement-spacerHr {
+  -ms-name: "spacerHr";
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: block;
+  clear: left;
+  height: 0px; }
+
+.ms-rtePosition-2 {
+  padding: 15px; }
+
+p.ms-rteElement-textHighLight {
+  -ms-name: "textHighLight";
+  font-size: 38px;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+  padding: 0; }
+
+p.ms-rteElement-p {
+  font-weight: 300; }
+
+@media only screen and (max-width: 770px) {
+  .ms-rteElement-Hr {
+    padding: 5px 0px; }
+  .ms-rtePosition-2 {
+    padding: 15px;
+    max-width: 50%; }
+  p.ms-rteElement-textHighLight {
+    font-size: 25px; } }
+
+@media only screen and (max-width: 500px) {
+  .ms-rtePosition-2 {
+    padding: 20px;
+    max-width: 100%; } }
+
+h2.ms-rteElement-H2 {
+  -ms-name: "heading 2";
+  display: table;
+  padding: 0px 0 25px 0; }
+
+h2.ms-rteElement-H2-center {
+  -ms-name: "heading 2 center";
+  text-align: center; }
+
+div.ms-rteElement-divLeft {
+  -ms-name: "divLeft";
+  float: left;
+  margin: 0px 1% 25px 1%;
+  border: 1px solid #777;
+  padding: 30px;
+  width: 48%; }
+
+div.ms-rteElement-divThird {
+  -ms-name: "divThird";
+  float: left;
+  margin: 0px 1% 25px 1%;
+  border: 1px solid #777;
+  padding: 30px;
+  width: 31.3%; }
+
+div.ms-rteElement-divRight {
+  -ms-name: "divRight";
+  float: right;
+  margin: 0px 1% 25px 1%;
+  border: 1px solid #777;
+  padding: 25px; }
+
+div.ms-rteElement-divRight50 {
+  -ms-name: "divRight50";
+  float: right;
+  margin: 0px 1% 25px 1%;
+  border: 1px solid #777;
+  padding: 25px;
+  width: 48%; }
+
+div.ms-rteElement-divFull {
+  -ms-name: "divFull";
+  float: right;
+  margin: 0px 1% 25px 1%;
+  border: 1px solid #777;
+  padding: 25px;
+  width: 98%; }
+  div.ms-rteElement-divFull h2, div.ms-rteElement-divFull h3 {
+    border-bottom: 1px solid #777;
+    padding-bottom: 25px;
+    width: 100%; }
+  div.ms-rteElement-divFull h2, div.ms-rteElement-divFull h3, div.ms-rteElement-divFull h4, div.ms-rteElement-divFull h5, div.ms-rteElement-divFull p, div.ms-rteElement-divFull ol, div.ms-rteElement-divFull ul {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px; }
+  div.ms-rteElement-divFull img {
+    max-width: 100%; }
+
+div.ms-rteElement-divLeft h2, div.ms-rteElement-divThird h2, div.ms-rteElement-divRight50 h2 {
+  border-bottom: 1px solid #777;
+  padding: 0 0 25px 0;
+  width: 100%; }
+
+div.ms-rteElement-divLeft h3, div.ms-rteElement-divThird h3, div.ms-rteElement-divRight50 h3 {
+  border-bottom: 1px solid #777;
+  padding-bottom: 25px;
+  width: 100%; }
+
+div.ms-rteElement-divLeft h2, div.ms-rteElement-divLeft h3, div.ms-rteElement-divLeft h4, div.ms-rteElement-divLeft h5, div.ms-rteElement-divLeft p, div.ms-rteElement-divLeft ol, div.ms-rteElement-divLeft ul, div.ms-rteElement-divThird h2, div.ms-rteElement-divThird h3, div.ms-rteElement-divThird h4, div.ms-rteElement-divThird h5, div.ms-rteElement-divThird p, div.ms-rteElement-divThird ol, div.ms-rteElement-divThird ul, div.ms-rteElement-divRight50 h2, div.ms-rteElement-divRight50 h3, div.ms-rteElement-divRight50 h4, div.ms-rteElement-divRight50 h5, div.ms-rteElement-divRight50 p, div.ms-rteElement-divRight50 ol, div.ms-rteElement-divRight50 ul {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+div.ms-rteElement-divLeft .btn, div.ms-rteElement-divThird .btn, div.ms-rteElement-divRight50 .btn {
+  width: 100%; }
+
+div.ms-rteElement-divLeft img, div.ms-rteElement-divThird img, div.ms-rteElement-divRight50 img {
+  max-width: 100%; }
+
+div.ms-rteElement-divFull.highlight, div.ms-rteElement-divLeft.highlight, div.ms-rteElement-divThird.highlight, div.ms-rteElement-divRight.highlight {
+  border-color: #111;
+  background: #111; }
+  div.ms-rteElement-divFull.highlight h2, div.ms-rteElement-divFull.highlight h3, div.ms-rteElement-divLeft.highlight h2, div.ms-rteElement-divLeft.highlight h3, div.ms-rteElement-divThird.highlight h2, div.ms-rteElement-divThird.highlight h3, div.ms-rteElement-divRight.highlight h2, div.ms-rteElement-divRight.highlight h3 {
+    border-color: #444; }
+
+@media only screen and (max-width: 1000px) {
+  div.ms-rteElement-divThird {
+    width: 98%; } }
+
+@media only screen and (max-width: 600px) {
+  div.ms-rteElement-divLeft, div.ms-rteElement-divRight50, div.ms-rteElement-divRight {
+    width: 98%; } }
+
+.spacerBottom {
+  margin-bottom: 50px;
+  display: block;
+  clear: left; }
+
+.spacerTop {
+  margin-top: 50px;
+  display: block;
+  clear: left; }
+
+@media only screen and (max-width: 770px) {
+  .spacerTop {
+    margin-top: 20px; }
+  .spacerBottom {
+    margin-bottom: 20px; } }
+
+.clear {
+  clear: both;
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0px; }
+
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+div.ms-rteElement-div-center {
+  -ms-name: "div center";
+  text-align: center; }
+
 #containerSiteStatement {
   background: #2c3e50; }
   #containerSiteStatement #siteStatement .container-fluid {
