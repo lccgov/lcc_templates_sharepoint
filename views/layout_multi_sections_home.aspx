@@ -154,6 +154,6 @@
     </div>
 </section>
 <section>      
-    <div class="row editPanel">                         <div class="col-md-12">                             <PublishingWebControls:EditModePanel runat=server id="EditModePanel1">                                 <Taxonomy:TaxonomyFieldControl FieldName="71aeea80-d174-4461-b2ad-b40d1f6ef43a" runat="server"></Taxonomy:TaxonomyFieldControl>                             </PublishingWebControls:EditModePanel>                         </div>                     </div>
+    <div class="container-fluid">                                 <div class="row editPanel">                                     <div class="col-md-12">                                         <PublishingWebControls:EditModePanel runat=server id="EditModePanel1">                                             <Taxonomy:TaxonomyFieldControl FieldName="71aeea80-d174-4461-b2ad-b40d1f6ef43a" runat="server"></Taxonomy:TaxonomyFieldControl>                                         </PublishingWebControls:EditModePanel>                                     </div>                                 </div>                               </div>
 </section>
 </asp:Content>

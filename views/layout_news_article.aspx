@@ -18,6 +18,43 @@
             </div>
             <div class="col-md-4">
                   <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                  <div id="keywordFilter" data-module="keyword-filter" class="SearchControlContainerKeyword" data-module-started="false">
+                        <h3>View News By Keyword</h3>
+                            <div class="inner">
+                                <input type="text" class="js-keyword">
+                                <a href="#" class="button js-keyword-submit">Go</a>
+                            </div>
+                 </div>
+                 <div id="dateRangeFilter" class="SearchControlContainerDate" data-module="date-range-filter" data-module-started="false">
+                    <h3>View News By Date</h3>
+                            <div class="inner">
+                                <input type="text" class="datepicker js-date-range-start hasDatepicker">
+                                <input type="text" class="datepicker js-date-range-end hasDatepicker">
+                                <a href="#" class="button js-date-range-submit">Go</a>
+                            </div>
+                 </div>
+                 <div>
+                <div data-module="news-archive-filter" class="archiveContainer" data-module-started="false">
+                    <h3>News Archive</h3>
+                    <div id="archive">
+                </div>
+                </div>
+
+                <script id="archive-template" type="text/x-handlebars-template">
+                 <ul class="accordionWP" data-module="accordion">
+                    {{#each Years}}
+                    <li>
+                    <div class="accordion-drawer">
+                    <h3 class="accordion"><a href="#"><span id="tooltip" class="sr-only">Click to expand</span>{{year}}</a></h3>
+                    {{#months}}
+                        <div class="content-block"><a class="js-news-archive-filter-submit" data-year='{{../year}}' data-month='{{month}}' href="#">{{monthAsString}}</a></div>
+                    {{/months}}
+                    </div>
+                    </li>
+                    {{/each}}
+                    </ul>
+                </script>
+                </div>
             </div>
         </div>
         <div class="row">
