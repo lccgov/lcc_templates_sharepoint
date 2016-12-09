@@ -18,34 +18,38 @@
             </div>
             <div class="col-md-4">
                   <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-                  <div id="keywordFilter" data-module="keyword-filter" class="SearchControlContainerKeyword" data-module-started="false">
+                  <div id="keywordFilter" data-module="keyword-filter" class="sectionSubsite news" data-module-started="false">
                         <h3>View News By Keyword</h3>
-                            <div class="inner">
+                    
                                 <input type="text" class="js-keyword">
                                 <a href="#" class="button js-keyword-submit">Go</a>
-                            </div>
+                          
                  </div>
-                 <div id="dateRangeFilter" class="SearchControlContainerDate" data-module="date-range-filter" data-module-started="false">
+                 <div id="dateRangeFilter" class="sectionSubsite news" data-module="date-range-filter" data-module-started="false">
                     <h3>View News By Date</h3>
-                            <div class="inner">
-                                <input type="text" class="datepicker js-date-range-start hasDatepicker">
-                                <input type="text" class="datepicker js-date-range-end hasDatepicker">
+                            <div class="datePickerContainer">
+                                <label for="Start-date">Start date</label>    
+                                <input name="Start-date" type="text" class="datepicker js-date-range-start hasDatepicker">
+                                </div>
+                                  <div class="datePickerContainer">
+                                <label for="End-date">End date</label>    
+                                <input name="End-date" type="text" class="datepicker js-date-range-end hasDatepicker">
                                 <a href="#" class="button js-date-range-submit">Go</a>
                             </div>
                  </div>
                  <div>
-                <div data-module="news-archive-filter" class="archiveContainer" data-module-started="false">
+                <div data-module="news-archive-filter" class="sectionSubsite news" data-module-started="false">
                     <h3>News Archive</h3>
                     <div id="archive">
                 </div>
                 </div>
 
                 <script id="archive-template" type="text/x-handlebars-template">
-                 <ul class="accordionWP" data-module="accordion">
+                 <ul class="accordion" data-module="accordion">
                     {{#each Years}}
                     <li>
                     <div class="accordion-drawer">
-                    <h3 class="accordion"><a href="#"><span id="tooltip" class="sr-only">Click to expand</span>{{year}}</a></h3>
+                   <a class="header" href="#"><span id="tooltip" class="sr-only">Click to expand</span>{{year}}</a>
                     {{#months}}
                         <div class="content-block"><a class="js-news-archive-filter-submit" data-year='{{../year}}' data-month='{{month}}' href="#">{{monthAsString}}</a></div>
                     {{/months}}
@@ -74,123 +78,6 @@
             </div>
         </div>
     </div>
-    </div>
-</section>
-<WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionTwoTop" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-<section class="sectionTwo" id="sectionTwo">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionTwoFull" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-             <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionTwoContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionTwoRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionTwoThirdCol1" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionTwoThirdCol2" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-              <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionTwoThirdCol3" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-    </div>
-</section>
-<WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionThreeTop" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-<section class="sectionThree" id="sectionThree">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-              <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionThreeFull" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-             <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionThreeContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-           <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionThreeRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionThreeThirdCol1" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionThreeThirdCol2" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionThreeThirdCol3" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-    </div>
-</section>
-<WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFourTop" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-<section class="sectionFour" id="sectionFour">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFourFull" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-             <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFourContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-
-            </div>
-            <div class="col-md-4">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFourRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFourThirdCol1" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-                <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFourThirdCol2" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-               <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFourThirdCol3" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-    </div>
-</section>
-<WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFiveTop" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-<section class="sectionFive" id="sectionFive">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-              <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFiveFull" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-              <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFiveContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-              <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFiveRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-             <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFiveThirdCol1" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-              <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFiveThirdCol2" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-            <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionFiveThirdCol3" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
     </div>
 </section>
 <section>      
