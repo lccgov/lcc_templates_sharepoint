@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="row">
-         <div class="col-lg-12>
+         <div class="col-lg-12">
              <div class="breadcrumb">
                     <ASP:SITEMAPPATH runat="server" sitemapproviders="SPSiteMapProvider,SPXmlContentMapProvider" rendercurrentnodeaslink="false" hideinteriorrootnodes="true" RootNodeStyle-CssClass="bc-root"><PATHSEPARATORTEMPLATE></PATHSEPARATORTEMPLATE></ASP:SITEMAPPATH> 
              </div>
