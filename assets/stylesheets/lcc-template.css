@@ -647,6 +647,14 @@ div.ms-rteElement-div-center {
   -ms-name: "div center";
   text-align: center; }
 
+.listWebpart li {
+  list-style: none;
+  float: left; }
+  .listWebpart li img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px; }
+
 #containerSiteStatement {
   background: #2c3e50; }
   #containerSiteStatement #siteStatement .container-fluid {

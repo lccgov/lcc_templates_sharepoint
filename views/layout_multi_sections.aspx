@@ -8,12 +8,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
-                <div class="breadcrumb">
+            <div class="col-lg-12">
+             <div class="breadcrumb">
                     <ASP:SITEMAPPATH runat="server" sitemapproviders="SPSiteMapProvider,SPXmlContentMapProvider" rendercurrentnodeaslink="false" hideinteriorrootnodes="true" RootNodeStyle-CssClass="bc-root"><PATHSEPARATORTEMPLATE></PATHSEPARATORTEMPLATE></ASP:SITEMAPPATH> 
-                </div>
-                <h1><SharePointWebControls:TextField FieldName="fa564e0f-0c70-4ab9-b863-0177e6ddd247" runat="server" /></h1> 
-                <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+             </div>
+            </div>
+            <div class="col-md-8">
+              <h1><SharePointWebControls:TextField FieldName="fa564e0f-0c70-4ab9-b863-0177e6ddd247" runat="server" /></h1> 
+              <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
                 <PublishingWebControls:RichHtmlField FieldName="f55c4d88-1f2e-4ad9-aaa8-819af4ee7ee8" runat="server"></PublishingWebControls:RichHtmlField> 
             </div>
             <div class="col-md-4">
