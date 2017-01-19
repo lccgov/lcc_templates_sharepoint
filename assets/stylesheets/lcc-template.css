@@ -613,15 +613,32 @@ div.ms-rteElement-divFull.highlight, div.ms-rteElement-divLeft.highlight, div.ms
   div.ms-rteElement-divLeft, div.ms-rteElement-divRight50, div.ms-rteElement-divRight {
     width: 98%; } }
 
-.spacerBottom {
-  margin-bottom: 50px;
-  display: block;
-  clear: left; }
-
-.spacerTop {
-  margin-top: 50px;
-  display: block;
-  clear: left; }
+.ms-rteElement-divTwoThirds {
+  float: left;
+  margin: 0px 1% 25px 1%;
+  padding: 30px 0;
+  width: 64.6%; }
+  .ms-rteElement-divTwoThirds h2, .ms-rteElement-divTwoThirds h3 {
+    margin: 0;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 25px;
+    width: 100%; }
+  .ms-rteElement-divTwoThirds h2 {
+    padding-bottom: 20px; }
+  .ms-rteElement-divTwoThirds ul {
+    padding: 0px;
+    margin: 0px; }
+    .ms-rteElement-divTwoThirds ul li {
+      list-style: none;
+      padding: 15px 0; }
+  @media only screen and (max-width: 1000px) {
+    .ms-rteElement-divTwoThirds {
+      width: 98%; } }
+  @media only screen and (max-width: 600px) {
+    .ms-rteElement-divTwoThirds .pull-right {
+      margin-bottom: 10px;
+      float: none !important;
+      padding-left: 10px; } }
 
 @media only screen and (max-width: 770px) {
   .spacerTop {
@@ -637,12 +654,6 @@ div.ms-rteElement-divFull.highlight, div.ms-rteElement-divLeft.highlight, div.ms
   visibility: hidden;
   width: 0px; }
 
-.floatLeft {
-  float: left; }
-
-.floatRight {
-  float: right; }
-
 div.ms-rteElement-div-center {
   -ms-name: "div center";
   text-align: center; }
@@ -654,6 +665,31 @@ div.ms-rteElement-div-center {
     width: 100%;
     max-width: 100%;
     margin-bottom: 15px; }
+
+.margin15px {
+  margin: 15px; }
+
+.lrgPadding {
+  padding: 150px 0; }
+  @media only screen and (max-width: 600px) {
+    .lrgPadding {
+      padding: 50px 0; } }
+
+.floatLeft {
+  float: left; }
+
+.floatRight {
+  float: right; }
+
+.spacerBottom {
+  margin-bottom: 50px;
+  display: block;
+  clear: left; }
+
+.spacerTop {
+  margin-top: 50px;
+  display: block;
+  clear: left; }
 
 #containerSiteStatement {
   background: #2c3e50; }
@@ -1166,8 +1202,9 @@ footer.main {
   right: -1px;
   top: 0px;
   width: 60px !important;
-  height: 40px;
-  min-height: 40px;
+  height: 38px;
+  min-height: 38px;
+  margin: 1px;
   padding: 0 15px;
   display: block;
   color: #333;
