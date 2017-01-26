@@ -28,7 +28,7 @@
                 <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneHalf" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
                <div class="col-md-6">
-                <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneRight" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneHalfRight" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
         </div>
            <div class="row">

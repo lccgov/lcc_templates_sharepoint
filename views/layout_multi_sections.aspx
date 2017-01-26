@@ -15,22 +15,23 @@
             </div>
             </div>
             <div class="row">
-            <div class="col-md-8">
-              <h1><SharePointWebControls:TextField FieldName="fa564e0f-0c70-4ab9-b863-0177e6ddd247" runat="server" /></h1> 
-                <PublishingWebControls:RichHtmlField FieldName="f55c4d88-1f2e-4ad9-aaa8-819af4ee7ee8" runat="server"></PublishingWebControls:RichHtmlField> 
-                <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-            <div class="col-md-4">
-                  <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-        </div>
+                    <div class="col-md-8">
+                    <h1><SharePointWebControls:TextField FieldName="fa564e0f-0c70-4ab9-b863-0177e6ddd247" runat="server" /></h1> 
+                        <PublishingWebControls:RichHtmlField FieldName="f55c4d88-1f2e-4ad9-aaa8-819af4ee7ee8" runat="server"></PublishingWebControls:RichHtmlField> 
+                        <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                    </div>
+                    <div class="col-md-4">
+                        <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                    </div>
+           </div>
          <div class="row">
-            <div class="col-md-6">
-                <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneHalf" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
-               <div class="col-md-6">
-                <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneRight" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-            </div>
+                <div class="col-md-6">
+                    <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneHalf" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                </div>
+                <div class="col-md-6">
+                    <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneHalfRight" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                </div>
+         </div>   
         <div class="row">
             <div class="col-lg-12">
                 <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneFullBottom" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
