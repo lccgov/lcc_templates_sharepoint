@@ -24,10 +24,10 @@
             </div>
         </div>
          <div class="row">
-            <div class="col-md-6>
+            <div class="col-md-6">
                 <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneHalf" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
-               <div class="col-md-6>
+               <div class="col-md-6">
                 <WebPartPages:WebPartZone runat="server" AllowPersonalization="false" ID="placeholdersectionOneRight" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
         </div>
