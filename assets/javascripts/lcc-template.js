@@ -6353,7 +6353,7 @@ var widgetsDatepicker = $.datepicker;
 }));(function (global, $) {
     "use strict";
 
-    var LCC = LCC || {};
+    var LCC = global.LCC || {};
     LCC.GoogleAnalytics = LCC.GoogleAnalytics || {};
 
     $(function () {
