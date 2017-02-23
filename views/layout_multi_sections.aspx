@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-lg-12">
              <div class="breadcrumb">
-                    <ASP:SITEMAPPATH runat="server" sitemapproviders="SPSiteMapProvider,SPXmlContentMapProvider" rendercurrentnodeaslink="false" hideinteriorrootnodes="true" RootNodeStyle-CssClass="bc-root"><PATHSEPARATORTEMPLATE></PATHSEPARATORTEMPLATE></ASP:SITEMAPPATH> 
+                     <SharePointWebControls:ListSiteMapPath runat="server"                                 SiteMapProviders="GlobalNavigationTaxonomyProvider"                                 RenderCurrentNodeAsLink="false"                                 NodeStyle-CssClass=""                                CurrentNodeStyle-CssClass=""                                RootNodeStyle-CssClass=""                                HideInteriorRootNodes="true"                                SkipLinkText=""                                PathSeparator="">                                </SharePointWebControls:ListSiteMapPath> 
              </div>
             </div>
             </div>
