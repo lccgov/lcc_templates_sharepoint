@@ -6350,7 +6350,22 @@ var widgetsDatepicker = $.datepicker;
 
 
 
-}));(function (global) {
+}));(function(global, $) {
+    "use strict";
+	var LCC = global.LCC || {};
+    LCC.MaxCharacters = LCC.MaxCharacters || {};
+	
+	LCC.MaxCharacters.setMaxCharacters = function (element, maxlimit) {
+		var new_length = element.val().length;
+		if (new_length >= maxlimit) {
+			element.val(element.val().substring(0, maxlimit));
+			new_length = maxlimit;
+		}
+		return (maxlimit - new_length) + ' characters left';						
+	}
+	
+    global.LCC = LCC;
+})(window, jQuery);(function (global) {
     "use strict";
 
 	var $ = global.jQuery
@@ -6511,6 +6526,7 @@ var widgetsDatepicker = $.datepicker;
 //(=) require accessible-media-player
 //(=) require sticky-ribbon
 //(=) require jquery-ui-datepicker
+//(=) require max-characters
 //(=) require modules/back-to-top
 //(=) require modules/accordion
 //(=) require modules/carousel
