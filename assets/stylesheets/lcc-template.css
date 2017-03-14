@@ -658,13 +658,16 @@ div.ms-rteElement-div-center {
   -ms-name: "div center";
   text-align: center; }
 
-.listWebpart li {
-  list-style: none;
-  float: left; }
-  .listWebpart li img {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 15px; }
+.listWebpart ul {
+  margin: 0px;
+  padding: 0px; }
+  .listWebpart ul li {
+    list-style: none;
+    float: left; }
+    .listWebpart ul li img {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px; }
 
 .margin15px {
   margin: 15px; }
@@ -724,6 +727,51 @@ form .error {
   margin: 20px 0 0 0; }
   .sectionSubsite .alert p {
     background: transparent; }
+
+a.doc {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 15px 20px 40px;
+  margin: 0px;
+  display: block;
+  font-weight: bold;
+  position: relative; }
+  a.doc:first-of-type {
+    border-top: 1px solid #ddd; }
+  a.doc:hover {
+    background: #ddd;
+    text-decoration: none; }
+  a.doc span {
+    color: #333;
+    margin-left: 10px; }
+  a.doc:before {
+    font-family: FontAwesome;
+    position: absolute;
+    font-weight: normal;
+    top: 17px;
+    left: 10px;
+    height: 25px;
+    margin-top: -5px;
+    width: 25px;
+    display: block;
+    padding: 0px;
+    font-size: 22px; }
+  a.doc.pdf:before {
+    content: '\f1c1';
+    color: #ED1F24; }
+  a.doc.word:before {
+    content: '\f1c2';
+    color: #294BA0; }
+  a.doc.xl:before {
+    content: '\f1c3';
+    color: #269129; }
+  a.doc.external:before {
+    content: '\f08e';
+    color: rgba(0, 0, 0, 0.5); }
+  a.doc.pp:before {
+    content: '\f1c4';
+    color: orange; }
+  a.doc.pdf:hover:before, a.doc.word:hover:before, a.doc.xl:hover:before, a.doc.external:hover:before, a.doc.pp:hover:before {
+    color: #333; }
 
 #containerSiteStatement {
   background: #2c3e50; }
