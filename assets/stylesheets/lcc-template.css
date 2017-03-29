@@ -151,11 +151,10 @@ a.skip:focus, a.skip:active {
   padding: 0.625em; }
 
 /*SKIP LINKS END*/
-/** Media Player CSS - needs to be moved to front end toolkit **/
+/** Media Player CSS - **/
 .media-container .media-player {
   display: block;
-  overflow: hidden;
-  margin: 30px 0; }
+  overflow: hidden; }
 
 .media-container .media-player.player-wide {
   min-width: 580px; }
@@ -1348,7 +1347,7 @@ footer.main {
 
 h1 {
   font-size: 50px;
-  margin: 0.6em 0 0.6em 0; }
+  margin: 0.2em 0 0.6em 0; }
 
 h2 {
   font-size: 40px; }
@@ -1371,7 +1370,7 @@ ol, ul {
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 40px;
-    margin: 0.5em 0 0.5em 0; }
+    margin: 0.2em 0 0.5em 0; }
   h2, h3, h4, h5 {
     margin: 1em 0 0.3em 0; }
   h2 {
