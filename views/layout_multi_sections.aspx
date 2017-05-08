@@ -24,6 +24,14 @@
                         <WebPartPages:WebPartZone runat="server" Title="sectionOneRightHandColumn" AllowPersonalization="false" ID="placeholdersectionOneRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
                     </div>
            </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <WebPartPages:WebPartZone runat="server" Title="sectionLeftHandColumn" AllowPersonalization="false" ID="placeholdersectionLeftHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                    </div>
+                    <div class="col-md-8">
+                        <WebPartPages:WebPartZone runat="server" Title="sectionOneRightContent" AllowPersonalization="false" ID="placeholdersectionOneRightContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                    </div>
+           </div>
          <div class="row">
                 <div class="col-md-6">
                     <WebPartPages:WebPartZone runat="server" Title="sectionOneHalf" AllowPersonalization="false" ID="placeholdersectionOneHalf" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
