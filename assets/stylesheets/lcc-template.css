@@ -1111,6 +1111,11 @@ MAIN MENU
   .ms-core-listMenu-horizontalBox li.static, .ms-core-listMenu-horizontalBox a.static, .ms-core-listMenu-horizontalBox span.static {
     width: 100%; } }
 
+.input-focus {
+  -webkit-box-shadow: 0 0 0 4px #FFBF47;
+  -moz-box-shadow: 0 0 0 4px #FFBF47;
+  box-shadow: 0 0 0 4px #FFBF47; }
+
 footer.main {
   margin: 0;
   background: #133E8D;
