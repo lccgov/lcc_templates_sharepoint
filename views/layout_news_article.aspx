@@ -18,7 +18,7 @@
                 <WebPartPages:WebPartZone runat="server" Title="sectionOneContent" AllowPersonalization="false" ID="placeholdersectionOneContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
                 <PublishingWebControls:RichHtmlField FieldName="f55c4d88-1f2e-4ad9-aaa8-819af4ee7ee8" runat="server"></PublishingWebControls:RichHtmlField> 
             </div>
-            <div class="col-md-4">
+            <aside role="complementary" class="col-md-4">
                   <WebPartPages:WebPartZone runat="server" Title="sectionOneRightHandColumn" AllowPersonalization="false" ID="placeholdersectionOneRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
                   <div id="keywordFilter" data-module="keyword-filter" class="sectionSubsite news" data-module-started="false">
                         <h3>View News By Keyword</h3>
@@ -163,7 +163,7 @@
                     </ul>
                 </script>
                 </div>
-            </div>
+            </aside>
         </div>
         <div class="row">
             <div class="col-lg-12">
