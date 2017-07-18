@@ -969,7 +969,9 @@ ul.menu {
   width: 100%;
   position: relative; }
   .masterhead a.navbar-brand {
-    background: url("images/lcclogo.svg") center center no-repeat;
+    background-image: url("images/lcclogo.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
     display: inline-block;
     height: 58px;
     width: 120px; }
