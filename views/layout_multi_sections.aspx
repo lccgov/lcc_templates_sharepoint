@@ -21,6 +21,22 @@
                      <WebPartPages:WebPartZone runat="server" Title="sectionOneContentTop" AllowPersonalization="false" ID="placeholdersectionOneContentTop" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
                         <PublishingWebControls:RichHtmlField FieldName="f55c4d88-1f2e-4ad9-aaa8-819af4ee7ee8" runat="server"></PublishingWebControls:RichHtmlField> 
                         <WebPartPages:WebPartZone runat="server" Title="sectionOneContent" AllowPersonalization="false" ID="placeholdersectionOneContent" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <WebPartPages:WebPartZone runat="server" Title="sectionOneContentHalf1" AllowPersonalization="false" ID="placeholdersectionOneContentHalf1" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                            </div>
+                            <div class="col-sm-6">
+                                <WebPartPages:WebPartZone runat="server" Title="sectionOneContentHalf2" AllowPersonalization="false" ID="placeholdersectionOneContentHalf2" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <WebPartPages:WebPartZone runat="server" Title="sectionOneContentHalf3" AllowPersonalization="false" ID="placeholdersectionOneContentHalf3" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                            </div>
+                            <div class="col-sm-6">
+                                <WebPartPages:WebPartZone runat="server" Title="sectionOneContentHalf4" AllowPersonalization="false" ID="placeholdersectionOneContentHalf4" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+                            </div>
+                        </div>
                     </div>
                     <aside role="complementary" class="col-md-4">
                         <WebPartPages:WebPartZone runat="server" Title="sectionOneRightHandColumn" AllowPersonalization="false" ID="placeholdersectionOneRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
