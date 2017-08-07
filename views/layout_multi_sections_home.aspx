@@ -31,22 +31,22 @@
             </div>
         </div>
         <div class="row column-thirds">
-            <div class="col-sm-6 cold-md-4 column-third">
+            <div class="col-sm-6 col-md-4 column-third">
                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol1" AllowPersonalization="false" ID="placeholdersectionOneThirdCol1" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
-            <div class="col-sm-6 cold-md-4 column-third">
+            <div class="col-sm-6 col-md-4 column-third">
                 <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol2" AllowPersonalization="false" ID="placeholdersectionOneThirdCol2" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
-            <div class="col-sm-6 cold-md-4 column-third">
+            <div class="col-sm-6 col-md-4 column-third">
                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol3" AllowPersonalization="false" ID="placeholdersectionOneThirdCol3" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
-            <div class="col-sm-6 cold-md-4 column-third">
+            <div class="col-sm-6 col-md-4 column-third">
                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol4" AllowPersonalization="false" ID="placeholdersectionOneThirdCol4" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
-            <div class="col-sm-6 cold-md-4 column-third">
+            <div class="col-sm-6 col-md-4 column-third">
                 <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol5" AllowPersonalization="false" ID="placeholdersectionOneThirdCol5" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
-            <div class="col-sm-6 cold-md-4 column-third">
+            <div class="col-sm-6 col-md-4 column-third">
                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol6" AllowPersonalization="false" ID="placeholdersectionOneThirdCol6" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
         </div>
