@@ -170,7 +170,7 @@
                 <WebPartPages:WebPartZone runat="server" Title="sectionOneFullBottom" AllowPersonalization="false" ID="placeholdersectionOneFullBottom" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
         </div>
-        <div class="row">
+        <div class="row column-thirds">
             <div class="col-sm-4 column-third">
                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol1" AllowPersonalization="false" ID="placeholdersectionOneThirdCol1" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
@@ -180,8 +180,6 @@
             <div class="col-sm-4 column-third">
                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol3" AllowPersonalization="false" ID="placeholdersectionOneThirdCol3" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
-        </div>
-        <div class="row">
             <div class="col-sm-4 column-third">
                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol4" AllowPersonalization="false" ID="placeholdersectionOneThirdCol4" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
