@@ -724,24 +724,51 @@ div.ms-rteElement-div-center {
   display: block;
   clear: left; }
 
-form input[type=password], form input[type=text], form input[type=file], form select, form input, form textarea {
-  border-color: #ddd; }
+/*form{
+    input[type=password], input[type=text], input[type=file], select, input, textarea {
+        border-color:#ddd;
+    }
 
-form input[type=submit].submit {
-  background: green;
-  border: none;
-  font-size: 18px;
-  padding: 15px;
-  margin: 0px;
-  color: #fff;
-  width: 100%;
-  max-width: 300px; }
-  form input[type=submit].submit:hover {
-    background: #333; }
+    input[type=submit].submit{
+        background:$btn-background-color;
+        border:none;
+        font-size:18px;
+        padding:15px;
+        margin:0px;
+        color:#fff;
+        width:100%;
+        max-width:300px;
 
-form .error {
-  color: red; }
+        &:hover{
+            background:#333;
+        }
 
+
+    }
+
+    .error{
+        color:red;
+    }
+}
+
+.form-group{
+  margin-top:15px;
+ 
+    
+    label{
+        display:block;
+    }
+
+    input[type=password], input[type=text], input[type=file], select, input, textarea {
+
+        border:1px solid #ddd;
+        padding:5px;
+        width:100%;
+        max-width:30em;
+    }
+}
+
+*/
 .pageCommentsControl h2, .pageCommentsControl h3 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px; }
@@ -749,16 +776,6 @@ form .error {
 .pageCommentsControl .comment {
   padding: 30px 0;
   border-bottom: 1px solid #ddd; }
-
-.form-group {
-  margin-top: 15px; }
-  .form-group label {
-    display: block; }
-  .form-group input[type=password], .form-group input[type=text], .form-group input[type=file], .form-group select, .form-group input, .form-group textarea {
-    border: 1px solid #ddd;
-    padding: 5px;
-    width: 100%;
-    max-width: 30em; }
 
 #Contact-US .btn {
   padding: 15px 20px; }
@@ -854,6 +871,20 @@ table.styledTable p {
   padding: 0 0 10px 0; }
 
 /* End generic Table styling ------------------------------------------------------------------ */
+@media (min-width: 1200px) {
+  .column-thirds .column-third:nth-child(4) {
+    clear: left; } }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .column-thirds .column-third {
+    width: 50%; }
+    .column-thirds .column-third:nth-child(3), .column-thirds .column-third:nth-child(5) {
+      clear: left; } }
+
+@media (max-width: 767px) {
+  .column-thirds .column-third {
+    clear: none; } }
+
 #containerSiteStatement {
   background: #2c3e50; }
   #containerSiteStatement #siteStatement .container-fluid {
@@ -1496,11 +1527,18 @@ ol, ul {
       margin: 0 5px 0 0;
       padding: 0; }
       .socialBookmarks ul li a {
+        text-decoration: none;
         display: block; }
         .socialBookmarks ul li a span {
-          display: none;
-          height: 0px; }
-        .socialBookmarks ul li a.facebook:after, .socialBookmarks ul li a.twitter:after, .socialBookmarks ul li a.youtube:after, .socialBookmarks ul li a.email:after, .socialBookmarks ul li a.instagram:after {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0; }
+        .socialBookmarks ul li a.facebook:after, .socialBookmarks ul li a.twitter:after, .socialBookmarks ul li a.youtube:after, .socialBookmarks ul li a.email:after, .socialBookmarks ul li a.instagram:after, .socialBookmarks ul li aflickr:after {
           font-family: FontAwesome;
           font-size: 25px;
           border-radius: 50%;
@@ -1525,6 +1563,8 @@ ol, ul {
           content: "\f16d"; }
         .socialBookmarks ul li a.email a:after {
           content: "\f0e0"; }
+          .socialBookmarks ul li a.email a:after.flickr a:after {
+            content: "\f16e"; }
 
 ul.menu {
   margin: 0;
