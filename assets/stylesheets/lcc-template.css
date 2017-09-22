@@ -1538,7 +1538,7 @@ ol, ul {
           overflow: hidden;
           clip: rect(0, 0, 0, 0);
           border: 0; }
-        .socialBookmarks ul li a.facebook:after, .socialBookmarks ul li a.twitter:after, .socialBookmarks ul li a.youtube:after, .socialBookmarks ul li a.email:after, .socialBookmarks ul li a.instagram:after, .socialBookmarks ul li aflickr:after {
+        .socialBookmarks ul li a.facebook:after, .socialBookmarks ul li a.twitter:after, .socialBookmarks ul li a.youtube:after, .socialBookmarks ul li a.email:after, .socialBookmarks ul li a.instagram:after, .socialBookmarks ul li a.flickr:after {
           font-family: FontAwesome;
           font-size: 25px;
           border-radius: 50%;
@@ -1563,8 +1563,8 @@ ol, ul {
           content: "\f16d"; }
         .socialBookmarks ul li a.email a:after {
           content: "\f0e0"; }
-          .socialBookmarks ul li a.email a:after.flickr a:after {
-            content: "\f16e"; }
+        .socialBookmarks ul li a.flickr a:after {
+          content: "\f16e"; }
 
 ul.menu {
   margin: 0;
