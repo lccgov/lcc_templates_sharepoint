@@ -1337,7 +1337,7 @@ footer.main {
       footer.main .socialBookmarks ul li:first-of-type {
         display: block;
         padding-bottom: 0.65em; } }
-    footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after {
+    footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after, footer.main .socialBookmarks .flickr:after {
       font-family: FontAwesome;
       font-size: 25px;
       border-radius: 50%;
@@ -1559,11 +1559,11 @@ ol, ul {
           content: "\f099"; }
         .socialBookmarks ul li a.youtube:after {
           content: "\f167"; }
-        .socialBookmarks ul li a.instagram a:after {
+        .socialBookmarks ul li a.instagram:after {
           content: "\f16d"; }
-        .socialBookmarks ul li a.email a:after {
+        .socialBookmarks ul li a.email:after {
           content: "\f0e0"; }
-        .socialBookmarks ul li a.flickr a:after {
+        .socialBookmarks ul li a.flickr:after {
           content: "\f16e"; }
 
 ul.menu {
