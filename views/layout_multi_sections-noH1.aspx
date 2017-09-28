@@ -57,6 +57,12 @@
             <div class="col-lg-12">
                 <WebPartPages:WebPartZone runat="server" Title="sectionOneFullBottom" AllowPersonalization="false" ID="placeholdersectionOneFullBottom" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
+            <div class="col-md-8">
+                <WebPartPages:WebPartZone runat="server" Title="sectionOneTwoThirds" AllowPersonalization="false" ID="placeholdersectionOneTwoThirds" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+            </div>
+            <div class="col-md-4">
+                <WebPartPages:WebPartZone runat="server" Title="sectionOneOneThird" AllowPersonalization="false" ID="placeholdersectionOneOneThird" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+            </div>
         </div>
         <div class="row column-thirds">
             <div class="col-sm-6 col-md-4 column-third">
@@ -76,6 +82,24 @@
             </div>
             <div class="col-sm-6 col-md-4 column-third">
                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol6" AllowPersonalization="false" ID="placeholdersectionOneThirdCol6" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+            </div>
+            <div class="col-sm-6 col-md-4 column-third">
+               <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol7" AllowPersonalization="false" ID="placeholdersectionOneThirdCol7" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+            </div>
+            <div class="col-sm-6 col-md-4 column-third">
+                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol8" AllowPersonalization="false" ID="placeholdersectionOneThirdCol8" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+            </div>
+            <div class="col-sm-6 col-md-4 column-third">
+               <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol9" AllowPersonalization="false" ID="placeholdersectionOneThirdCol9" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+            </div>
+            <div class="col-sm-6 col-md-4 column-third">
+               <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol10" AllowPersonalization="false" ID="placeholdersectionOneThirdCol10" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+            </div>
+            <div class="col-sm-6 col-md-4 column-third">
+                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol11" AllowPersonalization="false" ID="placeholdersectionOneThirdCol11" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+            </div>
+            <div class="col-sm-6 col-md-4 column-third">
+               <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol12" AllowPersonalization="false" ID="placeholdersectionOneThirdCol12" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
         </div>
     </div>
