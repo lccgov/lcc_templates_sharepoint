@@ -67,6 +67,14 @@
                 <WebPartPages:WebPartZone runat="server" Title="sectionOneOneThird" AllowPersonalization="false" ID="placeholdersectionOneOneThird" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <WebPartPages:WebPartZone runat="server" Title="sectionOneOneThirdLeft" AllowPersonalization="false" ID="placeholdersectionOneOneThirdLeft" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+            </div>
+            <div class="col-md-8">
+                <WebPartPages:WebPartZone runat="server" Title="sectionOneTwoThirdsRight" AllowPersonalization="false" ID="placeholdersectionOneTwoThirdsRight" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+            </div>
+        </div>
         <div class="row column-thirds">
             <div class="col-sm-6 col-md-4 column-third">
                <WebPartPages:WebPartZone runat="server" Title="sectionOneThirdCol1" AllowPersonalization="false" ID="placeholdersectionOneThirdCol1" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
