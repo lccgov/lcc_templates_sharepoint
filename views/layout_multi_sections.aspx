@@ -35,6 +35,7 @@
                                 <WebPartPages:WebPartZone runat="server" Title="sectionOneContentHalf4" AllowPersonalization="false" ID="placeholdersectionOneContentHalf4" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
                             </div>
                         </div>
+                        <WebPartPages:WebPartZone runat="server" Title="sectionOneContentBottom" AllowPersonalization="false" ID="placeholdersectionOneContentBottom" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
                     </div>
                     <aside role="complementary" class="col-md-4">
                         <WebPartPages:WebPartZone runat="server" Title="sectionOneRightHandColumn" AllowPersonalization="false" ID="placeholdersectionOneRightHandColumn" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
