@@ -6563,6 +6563,19 @@ var widgetsDatepicker = $.datepicker;
    
 	global.LCC = LCC
   
+})(window, jQuery);(function (global, $) {
+    "use strict";
+
+var HostURL = window.location.host;
+var LCCSite = HostURL.match(/www(-?)(.*?).leeds.gov.uk/)
+                             if(LCCSite){
+                                           document.getElementById("LCCAlerts").classList.remove("hide");
+                             }else{
+                                           document.getElementById("HNSCAlerts").classList.remove("hide");
+                             }
+
+
+
 })(window, jQuery);//(=) require modules
 //(=) require cookie-bar
 //(=) require main-menu
@@ -6578,4 +6591,5 @@ var widgetsDatepicker = $.datepicker;
 //(=) require modules/carousel
 //(=) require modules/scroll-to
 //(=) require modules/prevent-default
+//(=) require alert
 ;
