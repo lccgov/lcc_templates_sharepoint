@@ -119,7 +119,6 @@
 					</div>
 				</div>
 			</div>
-			</div>
 		</section>
 
 		<WebPartPages:WebPartZone runat="server" Title="sectionTwoTop" AllowPersonalization="false" ID="placeholdersectionTwoTop" FrameType="TitleBarOnly" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
